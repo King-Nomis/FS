@@ -48,7 +48,7 @@ START_MSG = os.environ.get("START_MESSAGE", "𝙷𝚎𝚕𝚕𝚘 {first}\n\n�
 #your telegram tag without @
 OWNER_TAG = os.environ.get("OWNER_TAG", "King_nomis")
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "0"))
+TIME = int(os.environ.get("TIME", "14400"))
 
 
 #Shortner (token system) 
@@ -84,7 +84,7 @@ USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" e
 #UPI ID
 UPI_ID = os.environ.get("UPI_ID", "abhinash69@fam")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://telegra.ph/file/9e795bce3b33cd1dcf7a0-899d58c3885dc2ed37.jpg")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "Take QR From Owner")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
