@@ -48,7 +48,7 @@ START_MSG = os.environ.get("START_MESSAGE", "𝙷𝚎𝚕𝚕𝚘 {first}\n\n�
 #your telegram tag without @
 OWNER_TAG = os.environ.get("OWNER_TAG", "King_nomis")
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "14400"))
+TIME = int(os.environ.get("TIME", "0"))
 
 
 #Shortner (token system) 
@@ -59,7 +59,7 @@ https://dashboard.shareus.io/
 
 # Turn this feature on or off using True or False put value inside  ""
 # TRUE for yes FALSE if no 
-USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
+USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "False") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "linkshortify.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "65a44ff0a6ee84bf4c118bf26009a21dca68b6d1"")
